@@ -1,11 +1,9 @@
 from decimal import *
 def listgenerator(start,end):
     list=[]
-    startingpoint=int(2*start)
-    limit=int(2*end)
+    begin=int(2*start)
+    finish=int(2*end)+1
 
-    for i in range(startingpoint,limit+1):
+    for i in range(begin,finish):
         list.append(Decimal(i/2))
-    print(list)
-    print(type(list[2]))
-listgenerator(2,5.5)
+    return(list)
